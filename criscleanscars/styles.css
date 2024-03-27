@@ -1,0 +1,263 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #121212; /* Darker shade for more depth */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Navigation Bar */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #ffffff;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Logo Styling */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Centering the logo */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212; /* Adjust background color as needed */
+}
+
+.logo-container img {
+    height: 80px; /* Adjust based on your logo's size */
+    /* Add more styles here if needed */
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 15px; /* Provides spacing between logo and nav items on smaller screens */
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Reduced margin for vertical layout */
+    }
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 4%;
+}
+
+footer a {
+    color: white; /* Adjust if needed to fit your design */
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #E1306C; /* Instagram's brand color for hover effect */
+}
+
+footer i {
+    margin-right: 8px;
+}
+
+/* Additional Styling for Aesthetics */
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/* Styling for the Gallery and Testimonials sections */
+.gallery img, .testimonial {
+    max-width: 90%;
+    margin: 20px auto;
+    border: 5px solid #444;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+#gallery {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.gallery-item {
+    display: inline-block;
+    margin: 10px;
+    background-color: #333; /* Dark background for contrast */
+    border-radius: 8px; /* Rounded corners for the gallery items */
+    padding: 10px;
+}
+
+.gallery-item img {
+    width: 100%; /* Make image responsive */
+    max-width: 300px; /* Maximum size */
+    height: auto;
+    border-radius: 5px; /* Slightly rounded corners for the images */
+}
+
+.caption {
+    max-width: 600px; /* Sets the maximum width of captions */
+    margin: 0 auto; /* Centers the caption */
+    text-align: center; /* Centers the text within the caption */
+    padding: 10px; /* Adds some padding inside the captions */
+    font-style: italic; /* Optional: Adds a touch of style to your captions */
+}
+
+
+@media (max-width: 600px) {
+    .gallery-item {
+        display: block; /* Stack images on smaller screens */
+        margin: 10px auto; /* Center-align for small screens */
+    }
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    color: #000;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 10% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 450px; /* Maximum width */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+} */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text], input[type=email], input[type=date], input[type=time], input[type=submit], input[type=name] {
+    font-size: 16px;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+.book-now-container {
+    text-align: center; /* Centers the button horizontally */
+    margin-top: 10px; /* Space from the top or previous content */
+}
+
+/* Styling for the Book Now Button */
+#bookNowBtn {
+    padding: 15px 30px; /* Increased size */
+    font-size: 20px; /* Larger text */
+    color: #000; /* Black text */
+    background-color: #fff; /* White background */
+    border: 2px solid #000; /* Black border to enhance visibility */
+    border-radius: 25px; /* More rounded corners */
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for interactions */
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+}
+
+#bookNowBtn:hover {
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Increased shadow on hover */
+}
